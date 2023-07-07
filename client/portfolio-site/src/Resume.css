@@ -1,0 +1,42 @@
+.resume-card {
+    background-color: #2f3542;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+    border: 2px solid white; /* Add white border */
+  }
+  
+  .resume-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .resume-item {
+    background-color: #2f3542;
+    border-radius: 5px;
+    padding: 20px;
+    color: #2f3542;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    border: 2px solid white; /* Add white border */
+  }
+  
+  .resume-item ul {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .resume-item ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .resume-item h3 {
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  

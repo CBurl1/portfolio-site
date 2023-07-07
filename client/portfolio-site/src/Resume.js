@@ -1,11 +1,12 @@
 import React from 'react';
+import './Resume.css';
 
 const Resume = () => {
   return (
-    <div>
+    <div className="resume-card">
       <h2 style={{ fontSize: '24px', textAlign: 'left' }}>Resume</h2>
-      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-        <div style={{ flex: '1', marginRight: '10px' }}>
+      <div className="resume-grid">
+        <div className="resume-item">
           <h3>Skills</h3>
           <ul>
             <li>HTML</li>
@@ -19,25 +20,23 @@ const Resume = () => {
             <li>Flask</li>
           </ul>
         </div>
-        <div style={{ flex: '1', marginLeft: '10px' }}>
-          <h3 style={{ fontSize: '18px' }}>Experience</h3>
+        <div className="resume-item">
+          <h3>Experience</h3>
           <p>
             Enter
           </p>
         </div>
-      </div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '20px' }}>
-        <div style={{ flex: '1', marginRight: '10px' }}>
-          <h3 style={{ fontSize: '18px' }}>Education</h3>
+        <div className="resume-item">
+          <h3>Education</h3>
           <ul>
             <li>Graduate of the Flatiron School - 2023</li>
             <li>York County Community College</li>
           </ul>
         </div>
-        <div style={{ flex: '1', marginLeft: '10px' }}>
+        <div className="resume-item">
           <h3>Certifications</h3>
           <ul>
-            <li style={{ fontSize: '18px' }}>Software Engineering - The Flatiron School</li>
+            <li>Software Engineering - The Flatiron School</li>
           </ul>
         </div>
       </div>
@@ -46,3 +45,4 @@ const Resume = () => {
 }
 
 export default Resume;
+
