@@ -5,6 +5,7 @@ import AboutMe from './Aboutme.js'
 import Resume from './Resume.js'
 import Projects from './Projects.js'
 import Contact from './Contact.js'
+import './App.css'
 
 function App() {
   // const scrollToSection = (sectionId) => {

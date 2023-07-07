@@ -1,0 +1,15 @@
+h1,
+h2,
+h3 {
+  display: inline;
+  background: linear-gradient(to right, #1e90ff, #5352ed);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+
+  
+  
+  
