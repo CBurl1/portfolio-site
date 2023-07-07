@@ -1,4 +1,4 @@
-.aboutme-card {
+.projects-card {
     background-color: #2f3542;
     border-radius: 5px;
     padding: 20px;
@@ -7,34 +7,45 @@
     border: 2px solid white;
   }
   
-  .aboutme-heading {
+  .projects-heading {
     font-size: 24px;
     text-align: left;
     margin-bottom: 20px;
   }
   
-  .aboutme-container {
+  .projects-container {
     display: flex;
     gap: 20px;
   }
   
-  .aboutme-item {
-    background-color: #2f3542;
+  .project-item {
+    background-color: 2f3542;
     border-radius: 5px;
     padding: 20px;
     color: #2f3542;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 1;
     margin: 10px;
     border: 2px solid white;
   }
   
-  .aboutme-item h3 {
+  .project-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
     margin-bottom: 10px;
   }
   
-  .aboutme-item p {
+  .project-item p {
     margin-bottom: 10px;
+  }
+  
+  .project-item a {
+    margin-right: 10px;
+  }
+  
+  .project-item a:last-child {
+    margin-right: 0;
   }
   
   
