@@ -1,0 +1,11 @@
+.aboutme-card {
+    background-color: #2f3542;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .aboutme-column {
+    width: 33%; /* Adjust the width as desired */
+    padding: 5vh;
+  }
+  
