@@ -10,7 +10,7 @@ const AboutMe = () => {
           <div className="aboutme-item">
             <h3>Who am I?</h3>
             <p>
-              I am a full stack developer with a passion for code and design. My journey into web development began as a hobby, where I discovered the power of creating something from scratch. Since then, I have been working hard to learn and develop my skills in programming.
+            As a graduate of the Flatiron School's Software Engineering program, I am a passionate full stack developer with a strong foundation in programming languages, frameworks, and software development concepts. I specialize in building intuitive user interfaces and crafting efficient backend systems.
             </p>
           </div>
           <div className="aboutme-item">

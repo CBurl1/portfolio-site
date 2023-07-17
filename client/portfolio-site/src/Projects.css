@@ -47,5 +47,26 @@
   .project-item a:last-child {
     margin-right: 0;
   }
-  
+  /* linear-gradient(to right, #1e90ff, #5352ed) */
+  .project-button {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 8px 16px;
+  background-color: #1e90ff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.project-button:hover {
+  background-color: #5352ed;
+}
+
+.project-button a {
+  color: #fff;
+  text-decoration: none;
+}
+
   

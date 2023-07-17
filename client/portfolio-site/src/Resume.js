@@ -22,10 +22,10 @@ const Resume = () => {
         </div>
         <div className="resume-item">
           <h3>Experience</h3>
-            <ul>
-                <li>E-commerce Specialist</li>
-                <li>Lead Line Cook</li>
-            </ul>
+          <ul>
+            <li>E-commerce Specialist</li>
+            <li>Lead Line Cook</li>
+          </ul>
         </div>
         <div className="resume-item">
           <h3>Education</h3>
@@ -41,9 +41,16 @@ const Resume = () => {
           </ul>
         </div>
       </div>
+      <div className="resume-link">
+        <h3>View Resume:</h3>
+        <a href="https://docs.google.com/document/d/1KVP-qPeiQulp7XfonAlBQbnZ1DD69EeuoxykKqWosc8/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+          Click here to view my resume
+        </a>
+      </div>
     </div>
   );
-}
+};
 
 export default Resume;
+
 
