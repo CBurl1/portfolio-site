@@ -1,8 +1,8 @@
 .intro-card {
     position: relative;
     width: 100%;
-    height: 300px; /* Adjust the height to your desired value */
-    border-radius: 5px;
+    height: 100vh; /* Adjust the height to your desired value */
+    border-radius: 0px;
     overflow: hidden;
   }
   

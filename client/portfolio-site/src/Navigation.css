@@ -1,0 +1,31 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 0px;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar li {
+    margin-bottom: 10px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .navbar a.active {
+    font-weight: bold;
+  }
+  
