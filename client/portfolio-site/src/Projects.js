@@ -1,5 +1,5 @@
 import React from 'react';
-import './Projects.css'; // Import the CSS file for custom styling
+import './Projects.css';
 
 const Projects = () => {
   return (
@@ -8,7 +8,8 @@ const Projects = () => {
       <div className="projects-container">
         <div className="project-item">
           <h3>Parki</h3>
-          <img src="project1-image.jpg" alt="Project 1" className="project-image" />
+          <br></br>
+            <img src="https://i.redd.it/l3ouhs6ncj661.jpg" alt="Project 1" className="project-image" />
           <p>
             Full stack web application that allows skiers and snowboarders to stay up to date with terrain parks around them
             <button className="project-button">
@@ -21,7 +22,7 @@ const Projects = () => {
         </div>
         <div className="project-item">
           <h3>Blockbuster Employee Portal</h3>
-          <img src="project2-image.jpg" alt="Project 2" className="project-image" />
+            <img src="https://cdna.artstation.com/p/assets/images/images/022/896/926/large/samantha-lau-cinema.jpg?1577141449" alt="Project 2" className="project-image" />
           <p>
             Full stack web application that allows employees to view, modify or create new movies, rentals, and clients
             <button className="project-button">
@@ -34,7 +35,7 @@ const Projects = () => {
         </div>
         <div className="project-item">
           <h3>Music Player and Storage</h3>
-          <img src="project3-image.jpg" alt="Project 3" className="project-image" />
+            <img src="https://static.vecteezy.com/system/resources/previews/021/660/070/original/mp3-player-collection-set-with-different-color-in-pixel-art-style-vector.jpg" alt="Project 3" className="project-image" />
           <p>
             CLI application that stores music and play songs in a user’s browser
             <button className="project-button">
@@ -51,6 +52,7 @@ const Projects = () => {
 }
 
 export default Projects;
+
 
 
 

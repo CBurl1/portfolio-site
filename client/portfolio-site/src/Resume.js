@@ -9,15 +9,15 @@ const Resume = () => {
         <div className="resume-item">
           <h3>Skills</h3>
           <ul>
+            <li>Python</li>
+            <li>Git</li>
+            <li>JavaScript</li>
+            <li>ReactJS</li>
+            <li>Flask</li>
+            <li>Git</li>
             <li>HTML</li>
             <li>CSS</li>
-            <li>JavaScript</li>
             <li>Bootstrap</li>
-            <li>ReactJS</li>
-            <li>Git</li>
-            <li>Python</li>
-            <li>SQL</li>
-            <li>Flask</li>
           </ul>
         </div>
         <div className="resume-item">
