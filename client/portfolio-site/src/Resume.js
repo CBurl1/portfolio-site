@@ -22,9 +22,10 @@ const Resume = () => {
         </div>
         <div className="resume-item">
           <h3>Experience</h3>
-          <p>
-            Enter
-          </p>
+            <ul>
+                <li>E-commerce Specialist</li>
+                <li>Lead Line Cook</li>
+            </ul>
         </div>
         <div className="resume-item">
           <h3>Education</h3>
