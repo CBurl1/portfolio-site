@@ -32,12 +32,23 @@
   border: 2px solid white;
   flex: 0 0 calc(33.33% - 20px);
   max-width: 400px;
+  text-align: center;
 }
 
 .project-image {
   width: 100%;
-  height: auto;
+  height: 200px; /* Adjust the desired height */
+  object-fit: cover;
   border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.project-content {
+  padding-bottom: 10px; /* Add padding below the text */
+}
+
+.project-content h3 {
+  font-size: 20px; /* Increase the font size */
   margin-bottom: 10px;
 }
 
@@ -47,6 +58,7 @@
 
 .project-item a {
   margin-right: 10px;
+  margin-bottom: 10px; /* Add margin-bottom for vertical spacing */
 }
 
 .project-item a:last-child {
@@ -55,13 +67,14 @@
 
 .project-button {
   display: inline-block;
-  margin-bottom: 10px;
   padding: 8px 16px;
   background-color: #1e90ff;
   text-decoration: none;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-right: 10px; /* Adjust the margin-right value as needed */
+  margin-bottom: 10px; /* Add margin-bottom for vertical spacing */
 }
 
 .project-button:hover {
@@ -72,6 +85,3 @@
   color: #fff;
   text-decoration: none;
 }
-
-
-  

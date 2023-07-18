@@ -43,9 +43,11 @@ const Resume = () => {
       </div>
       <div className="resume-link">
         <h3>View Resume:</h3>
-        <a href="https://docs.google.com/document/d/1KVP-qPeiQulp7XfonAlBQbnZ1DD69EeuoxykKqWosc8/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
-          Click here to view my resume
-        </a>
+        <button className="resume-button">
+          <a href="https://docs.google.com/document/d/1KVP-qPeiQulp7XfonAlBQbnZ1DD69EeuoxykKqWosc8/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+            Click here to view my resume
+          </a>
+        </button>
       </div>
     </div>
   );

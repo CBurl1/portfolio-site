@@ -17,15 +17,15 @@ const Contact = () => {
           </div>
           <div className="contact-item">
             <h3>LinkedIn</h3>
-            <p>
+            <button className="contact-button">
               <a href="https://www.linkedin.com/in/burleighcollin/">Connect with me!</a>
-            </p>
+            </button>
           </div>
           <div className="contact-item">
             <h3>Medium</h3>
-            <p>
+            <button className="contact-button">
               <a href="https://medium.com/@burleighcollin">Check out my blog!</a>
-            </p>
+            </button>
           </div>
         </div>
       </div>
@@ -34,6 +34,7 @@ const Contact = () => {
 }
 
 export default Contact;
+
 
 
 
