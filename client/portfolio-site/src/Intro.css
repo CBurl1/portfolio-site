@@ -37,3 +37,25 @@
     object-fit: cover;
   }
   
+  .custom-button {
+    display: block;
+    margin: 0 auto;
+    padding: 8px 16px;
+    background-color: #1e90ff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .custom-button:hover {
+    background-color: #5352ed;
+    text-decoration: none;
+  }
+  
+  .custom-button a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
