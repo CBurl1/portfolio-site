@@ -13,14 +13,23 @@
   overflow: hidden; /* Hide any potential overflow from the image */
 }
 
+.aboutme-heading-box {
+  background-color: #2f3542; /* Gray background color */
+  border-radius: 5px;
+  padding: 20px;
+  border: 2px solid white; /* White border */
+  max-width: 400px; /* Adjust the max-width as needed */
+  margin: 0 auto;
+  position: absolute; /* Enable absolute positioning */
+  top: 20px; /* Adjust the top position as needed */
+  left: 20px; /* Adjust the left position to move it to the left side */
+}
+
 .aboutme-heading {
   font-size: 28px; /* Adjust the font size as needed */
   text-align: left; /* Align the heading to the left */
   margin: 0; /* Remove any default margins */
   margin-bottom: 10px; /* Adjust the bottom margin as needed */
-  position: absolute; /* Enable absolute positioning */
-  top: 20px; /* Adjust the top position as needed */
-  left: 20px; /* Adjust the left position to move it to the left side */
 }
 
 .aboutme-container {
@@ -79,6 +88,7 @@
   align-items: center;
   box-sizing: border-box; /* Ensure padding is included in the overlay size */
 }
+
 
 
 
