@@ -32,33 +32,38 @@
   margin-bottom: 10px; /* Adjust the bottom margin as needed */
 }
 
+/* Remove flexbox styles from .aboutme-container */
 .aboutme-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto 0; /* Bring the container down with a margin-top of 20px */
+  padding: 20px;
 }
 
+/* Adjust .aboutme-item styles for one column */
 .aboutme-item {
   background-color: #2f3542;
   border-radius: 5px;
   padding: 20px;
   color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  flex: 1 0 300px;
-  margin: 10px;
+  width: 100%; /* Remove flex-related styles */
+  max-width: 800px; /* Adjust the max-width as needed */
+  margin: 10px auto; /* Center the items horizontally with auto margins */
   border: 2px solid white;
 }
 
 .aboutme-item h3 {
   margin-bottom: 10px;
   font-size: 24px;
+  text-align: center; /* Center the headings within the items */
 }
 
 .aboutme-item p {
   margin-bottom: 10px;
   font-size: 18px;
   line-height: 1.6;
+  text-align: justify; /* Justify the text within the items */
 }
 
 .image-container {
@@ -88,6 +93,7 @@
   align-items: center;
   box-sizing: border-box; /* Ensure padding is included in the overlay size */
 }
+
 
 
 
