@@ -14,7 +14,6 @@ const Resume = () => {
             <li>JavaScript</li>
             <li>ReactJS</li>
             <li>Flask</li>
-            <li>Git</li>
             <li>HTML</li>
             <li>CSS</li>
             <li>Bootstrap</li>

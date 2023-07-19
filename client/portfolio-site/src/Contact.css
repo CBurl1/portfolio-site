@@ -53,7 +53,7 @@
   display: block;
   margin: 0 auto;
   padding: 8px 16px;
-  background-color: #1e90ff;
+  background-color: #0585e1;
   text-decoration: none;
   border: none;
   border-radius: 4px;
@@ -62,7 +62,7 @@
 }
 
 .contact-button:hover {
-  background-color: #5352ed;
+  background-color: #e54fef;
   text-decoration: none;
 }
 
@@ -79,4 +79,4 @@
 
 
 
-  
+/* #0585e1, #e54fef */

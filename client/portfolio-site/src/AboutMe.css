@@ -1,5 +1,7 @@
+/* AboutMe Styles */
 .aboutme-card {
-  background-color: #2f3542;
+  background: url("https://images.unsplash.com/photo-1557264337-e8a93017fe92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80") no-repeat center center;
+  background-size: cover;
   border-radius: 1vh;
   padding: 2vh;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -7,12 +9,18 @@
   border: 2px solid white;
   width: 100%;
   margin: 0 auto;
+  position: relative;
+  overflow: hidden; /* Hide any potential overflow from the image */
 }
 
 .aboutme-heading {
-  font-size: 24px;
-  text-align: left;
-  margin-bottom: 20px;
+  font-size: 28px; /* Adjust the font size as needed */
+  text-align: left; /* Align the heading to the left */
+  margin: 0; /* Remove any default margins */
+  margin-bottom: 10px; /* Adjust the bottom margin as needed */
+  position: absolute; /* Enable absolute positioning */
+  top: 20px; /* Adjust the top position as needed */
+  left: 20px; /* Adjust the left position to move it to the left side */
 }
 
 .aboutme-container {
@@ -26,23 +34,60 @@
   background-color: #2f3542;
   border-radius: 5px;
   padding: 20px;
-  color: #2f3542;
+  color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  flex: 1 0 300px; /* Adjust the flex value and width as needed */
+  flex: 1 0 300px;
   margin: 10px;
   border: 2px solid white;
 }
 
 .aboutme-item h3 {
   margin-bottom: 10px;
-  font-size: 20px; /* Adjust the font size as needed */
+  font-size: 24px;
 }
 
 .aboutme-item p {
   margin-bottom: 10px;
-  font-size: 16px; /* Adjust the font size as needed */
-  line-height: 1.4; /* Adjust the line height as needed */
+  font-size: 18px;
+  line-height: 1.6;
 }
+
+.image-container {
+  width: 100%;
+  height: auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 1; /* Make the image fully visible */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Set the alpha value to 0 for full transparency */
+  color: white;
+  padding: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box; /* Ensure padding is included in the overlay size */
+}
+
+
+
+
+
+
+
+
+
 
 
   
