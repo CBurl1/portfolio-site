@@ -1,12 +1,26 @@
 .resume-card {
-  background-color: #2f3542;
-  border-radius: 5px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: url("https://images.unsplash.com/photo-1557264337-e8a93017fe92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80") no-repeat center center;
+  background-size: cover;
+  border-radius: 5vh; /* Use 5vh instead of 10px for consistent border radius */
+  padding: 2vh;
+  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.1); /* Adjust box-shadow values with vh */
   color: white;
-  border: 2px solid white;
-  width: 100%;
+  border: 0.2vw solid white; /* Adjust the border width with vw */
+  width: 85vw;
+  height: 90vh;
   margin: 0 auto;
+  position: relative;
+  overflow: scroll; /* Hide any potential overflow from the image */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-container {
+  margin: 0;
+  padding: 0;
 }
 
 .resume-grid {
@@ -29,6 +43,9 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 10px;
   border: 2px solid white;
+  text-align: left; /* Align text to the left */
+
+  display: block; /* Remove the flex properties */
 }
 
 .resume-item ul {
@@ -47,8 +64,8 @@
 
 .resume-button {
   display: block;
-  margin: 0 auto;
-  padding: 8px 16px;
+  margin: 20px auto; /* Add margin to push the button down */
+  padding: 12px 24px; /* Increase the padding to make the button larger */
   background-color: #0585e1;
   text-decoration: none;
   border: none;
@@ -68,7 +85,3 @@
 }
 
 
-
-  
-  
-  /* #0585e1, #e54fef */

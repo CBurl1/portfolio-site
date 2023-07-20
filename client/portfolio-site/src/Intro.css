@@ -1,10 +1,16 @@
 .intro-card {
+  background: url("https://images.unsplash.com/photo-1557264337-e8a93017fe92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80") no-repeat center center;
+  background-size: cover;
+  border-radius: 5vh; /* Use 5vh instead of 10px for consistent border radius */
+  padding: 2vh;
+  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.1); /* Adjust box-shadow values with vh */
+  color: white;
+  border: 0.2vw solid white; /* Adjust the border width with vw */
+  width: 85vw;
+  height: 90vh;
+  margin: 0 auto;
   position: relative;
-  width: 100%;
-  height: 100vh; /* Adjust the height to your desired value */
-  border-radius: 10px; /* Add rounded edges with a 10px radius */
-  overflow: hidden;
-  border: 2px white; /* Add a white border */
+  overflow: scroll; /* Hide any potential overflow from the image */
 }
 
 .intro-content {
@@ -12,7 +18,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 20px;
+  padding: 2vh;
   color: white;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.7); /* Adjust the transparency as needed */
@@ -21,12 +27,12 @@
 }
 
 .intro-content h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 3vh;
+  margin-bottom: 2vh;
 }
 
 .intro-content p {
-  font-size: 16px;
+  font-size: 2vh;
 }
 
 .intro-image {
@@ -36,18 +42,17 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: 2px solid white; /* Add a white border around the image */
-  border-radius: 10px; /* Add rounded edges with a 10px radius */
+  border-radius: 1vw; /* Add rounded edges with a 1vw radius */
 }
 
 .custom-button {
   display: block;
   margin: 0 auto;
-  padding: 8px 16px;
+  padding: 1vh 2vw;
   background-color: #0585e1;
   text-decoration: none;
   border: none;
-  border-radius: 4px;
+  border-radius: 2vw;
   color: white;
   cursor: pointer;
 }
@@ -61,5 +66,5 @@
   color: #fff;
   text-decoration: none;
 }
-/* #0585e1, #e54fef */
+
 

@@ -4,7 +4,6 @@ import './Resume.css';
 const Resume = () => {
   return (
     <div className="resume-card">
-      <h2 style={{ fontSize: '24px', textAlign: 'left' }}>Resume</h2>
       <div className="resume-grid">
         <div className="resume-item">
           <h3>Skills</h3>
@@ -41,7 +40,6 @@ const Resume = () => {
         </div>
       </div>
       <div className="resume-link">
-        <h3>View Resume:</h3>
         <button className="resume-button">
           <a href="https://docs.google.com/document/d/1KVP-qPeiQulp7XfonAlBQbnZ1DD69EeuoxykKqWosc8/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
             Click here to view my resume
