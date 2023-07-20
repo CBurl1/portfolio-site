@@ -30,7 +30,7 @@
   color: #ffffff;
   box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.1); /* Adjust box-shadow values with vh */
   width: 90%; /* Set a fixed width for the items */
-  margin: 1vh auto; /* Use auto margins to center the items */
+  margin: 2vh auto; /* Use auto margins to center the items */
   border: 0.2vw solid white; /* Adjust the border width with vw */
 }
 

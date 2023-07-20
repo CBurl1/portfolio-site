@@ -28,7 +28,7 @@ const Resume = () => {
         <div className="resume-item">
           <h3>Education</h3>
           <ul>
-            <li>Graduate of the Flatiron School - 2023</li>
+            <li>Graduate of the Flatiron School</li>
             <li>York County Community College</li>
           </ul>
         </div>

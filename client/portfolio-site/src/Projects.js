@@ -1,5 +1,6 @@
 import React from 'react';
 import './Projects.css';
+import blockbuster from './blockbuster.png';
 
 const Projects = () => {
   return (
@@ -28,7 +29,7 @@ const Projects = () => {
           {/* Project 2 */}
           <h3>Blockbuster Employee Portal</h3>
           <div className="project-content">
-            <img src="https://cdna.artstation.com/p/assets/images/images/022/896/926/large/samantha-lau-cinema.jpg?1577141449" alt="Project 2" className="project-image" />
+            <img src={blockbuster} alt="Project 2" className="project-image" />
             <p>
               Full stack web application that allows employees to view, modify or create new movies, rentals, and clients
             </p>
@@ -49,7 +50,7 @@ const Projects = () => {
           <div className="project-content">
             <img src="https://static.vecteezy.com/system/resources/previews/021/660/070/original/mp3-player-collection-set-with-different-color-in-pixel-art-style-vector.jpg" alt="Project 3" className="project-image" />
             <p>
-              CLI application that stores music and play songs in a user’s browser
+              CLI application with SQLAlchemy that stores music and play songs in a user’s browser
             </p>
             <div className="project-buttons">
               <button className="project-button">
@@ -64,11 +65,11 @@ const Projects = () => {
 
         {/* New Project 4 */}
         <div className="project-item">
-          <h3>New Project 4</h3>
+          <h3>Seasonal Produce Educator</h3>
           <div className="project-content">
-            <img src="URL_TO_IMAGE" alt="Project 4" className="project-image" />
+            <img src="https://media.istockphoto.com/id/165723582/vector/pixel-fruits.jpg?s=612x612&w=0&k=20&c=cr7k9zjJ1jQ_6H-dbiVK4m5OmWUkWmSyLdK4Z0UtnWs=" alt="Project 4" className="project-image" />
             <p>
-              Description of New Project 4
+              Vanilla Javascript webpage to educate people on when produce is best to consume
             </p>
             <div className="project-buttons">
               <button className="project-button">
@@ -83,11 +84,11 @@ const Projects = () => {
 
         {/* New Project 5 */}
         <div className="project-item">
-          <h3>New Project 5</h3>
+          <h3>Ski Shop</h3>
           <div className="project-content">
-            <img src="URL_TO_IMAGE" alt="Project 5" className="project-image" />
+            <img src="https://cdna.artstation.com/p/assets/images/images/048/109/936/large/kivanc-yucel-snowy-area2.jpg?1649234808" alt="Project 5" className="project-image" />
             <p>
-              Description of New Project 5
+              ReactJS Storefront for a ski shop
             </p>
             <div className="project-buttons">
               <button className="project-button">
@@ -102,25 +103,16 @@ const Projects = () => {
 
         {/* New Project 6 */}
         <div className="project-item">
-          <h3>New Project 6</h3>
+          <h3>Portfolio Site</h3>
           <div className="project-content">
-            <img src="URL_TO_IMAGE" alt="Project 6" className="project-image" />
+            <img src="https://img.freepik.com/premium-vector/old-computer-pixel-art-style_475147-1000.jpg" alt="Project 6" className="project-image" />
             <p>
-              Description of New Project 6
+              This awesome website
             </p>
-            <div className="project-buttons">
-              <button className="project-button">
-                <a href="URL_TO_DEMO">Watch a Demo</a>
-              </button>
-              <button className="project-button">
-                <a href="URL_TO_GITHUB">Checkout the GitHub</a>
-              </button>
             </div>
           </div>
         </div>
-
       </div>
-    </div>
   );
 }
 

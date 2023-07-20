@@ -1,131 +1,72 @@
-/* Styles for the contact card */
 .contact-card {
-  /* Set the background image and positioning */
   background: url("https://images.unsplash.com/photo-1557264337-e8a93017fe92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80") no-repeat center center;
   background-size: cover;
-  
-  /* Add a rounded border */
-  border-radius: 5vh; /* Use 5vh instead of 10px for consistent border radius */
-  
-  /* Add some padding around the content */
+  border-radius: 5vh;
   padding: 2vh;
-  
-  /* Add a box shadow for depth */
-  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.1); /* Adjust box-shadow values with vh */
-  
-  /* Set the font color to white */
+  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.1);
   color: white;
-  
-  /* Add a white border around the card */
-  border: 0.2vw solid white; /* Adjust the border width with vw */
-  
-  /* Set the width and height of the card */
+  border: 0.2vw solid white;
   width: 85vw;
   height: 90vh;
-  
-  /* Center the card horizontally on the page */
   margin: 0 auto;
-  
-  /* Set the position to relative for positioning children elements */
+  display: flex; /* Use flexbox to center the items */
+  flex-direction: column; /* Stack the items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
   position: relative;
-  
-  /* Hide any potential overflow from the image */
   overflow: scroll;
 }
 
-/* Styles for each contact item */
 .contact-item {
-  /* Set the background color */
   background-color: #2f3542;
-  
-  /* Add a rounded border */
+  width: 60vw;
   border-radius: 5px;
-  
-  /* Add some padding around the content */
-  padding: 3vw; /* Increase the padding to create more space between items */
-  
-  /* Set the font color to white */
+  padding: 1.5vw;
   color: white;
-  
-  /* Add a white border around the item */
   border: 2px solid white;
+  margin-bottom: 3vh;
 }
 
-/* Styles for headings in contact items */
 .contact-item h3 {
-  /* Add margin at the bottom of the heading */
-  margin-bottom: 1.5vh;
+  margin-bottom: 1vh;
 }
 
-/* Styles for paragraphs in contact items */
 .contact-item p {
-  /* Add margin at the bottom of the paragraph */
-  margin-bottom: 1.5vh;
+  margin-bottom: 1vh;
 }
 
-/* Styles for links in contact items */
 .contact-item a {
-  /* Set the color of links to white */
   color: white;
-  /* Remove default underline */
   text-decoration: none;
 }
 
-/* Styles for links on hover */
 .contact-item a:hover {
-  /* Add underline on hover */
   text-decoration: underline;
 }
 
-/* Styles for the contact button */
 .contact-button {
-  /* Center the button horizontally on the page */
   display: block;
   margin: 0 auto;
-  
-  /* Add padding around the button */
-  padding: 1.5vh 3vh; /* Increase padding to make the button larger */
-  
-  /* Set the background color */
+  padding: 1.5vh 3vh;
   background-color: #0585e1;
-  
-  /* Remove default text decoration */
   text-decoration: none;
-  
-  /* Remove the button border */
   border: none;
-  
-  /* Add rounded corners to the button */
   border-radius: 4px;
-  
-  /* Set the color of the button text to white */
   color: white;
-  
-  /* Set the cursor to pointer on hover */
   cursor: pointer;
 }
 
-/* Styles for the contact button on hover */
 .contact-button:hover {
-  /* Change the background color on hover */
   background-color: #e54fef;
-  
-  /* Remove underline on hover */
   text-decoration: none;
 }
 
-/* Styles for links within the contact button */
 .contact-button a {
-  /* Set the color of links within the button to white */
   color: #fff;
-  /* Remove default underline */
   text-decoration: none;
 }
 
-/* Styles for links within the contact button on hover */
 .contact-button a:hover {
-  /* Remove underline on hover */
   text-decoration: none;
 }
 
-/* #0585e1, #e54fef */
