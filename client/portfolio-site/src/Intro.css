@@ -25,6 +25,8 @@
   border-radius: 5px;
   z-index: 1;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a box shadow */
+  margin-bottom: 10vh;
+  margin-top: 5vh;
 }
 
 
@@ -37,7 +39,8 @@
 }
 
 .project-carousel-item {
-  width: 15vw; /* Reduce the width of the project item */
+  width: 25vw; /* Reduce the width of the project item */
+  height: auto;
   padding: 10px; /* Reduce the padding */
   text-align: center;
   background-color: #2f3542;
