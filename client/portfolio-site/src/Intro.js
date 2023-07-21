@@ -41,7 +41,7 @@ const Intro = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentProject((prevProject) => (prevProject + 1) % projects.length);
-    }, 1000); // Change project every 5 seconds
+    }, 2000); // Change project every 5 seconds
 
     return () => clearInterval(interval);
   }, [projects.length]);

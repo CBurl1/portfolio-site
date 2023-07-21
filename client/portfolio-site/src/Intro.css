@@ -41,7 +41,7 @@
 .project-carousel-item {
   width: 25vw; /* Reduce the width of the project item */
   height: auto;
-  padding: 10px; /* Reduce the padding */
+  padding: 0.5vw; /* Reduce the padding */
   text-align: center;
   background-color: #2f3542;
   border-radius: 50px;
@@ -55,28 +55,19 @@
 
 .project-image {
   width: 100%;
-  max-height: 200px;
   object-fit: cover;
   border-radius: 5px;
-  margin-bottom: 10px;
 }
 
 h3 {
   font-size: 20px;
-  margin-bottom: 10px;
   color: white;
 }
 
 p {
   font-size: 16px;
   line-height: 1.5;
-  color: #ddd;
-}
-
-.project-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  color: white;
 }
 
 /* Hide scrollbar */
