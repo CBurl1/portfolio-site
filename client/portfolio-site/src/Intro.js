@@ -6,7 +6,11 @@ const Intro = () => {
   const navigate = useNavigate();
 
   const handleEnterClick = () => {
-    navigate('/aboutme');
+    navigate('/projects');
+  };
+
+  const handleLogoClick = (link) => {
+    window.location.href = link;
   };
 
   return (
@@ -16,16 +20,23 @@ const Intro = () => {
         <p>Welcome to my portfolio website! As a full stack developer, I am excited to showcase my experience and skills in web development. Enter through the button below to learn more about me and my work!</p>
         <button className="custom-button" onClick={handleEnterClick}>Enter</button>
       </div>
-      <img
-        className="intro-image"
-        src="https://images.unsplash.com/photo-1557264337-e8a93017fe92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
-        alt="Stock"
-      />
+      <div className="logos-container">
+        <div className="logo" onClick={() => handleLogoClick('https://linkedin.com/in/burleighcollin')}>
+          <img src="https://www.logo.wine/a/logo/LinkedIn/LinkedIn-Wordmark-White-Dark-Background-Logo.wine.svg" alt="Logo 1" />
+        </div>
+        <div className="logo" onClick={() => handleLogoClick('https://github.com/CBurl1')}>
+          <img src="https://thurrott-assets.nyc3.digitaloceanspaces.com/web/wp-content/uploads/sites/2/2023/01/GitHub.jpeg" alt="Logo 2" />
+        </div>
+        <div className="logo" onClick={() => handleLogoClick('https://medium.com/@burleighcollin')}>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIWVpKoZ-YRwxtMjn6TNZHo4da3r_cX00j1A&usqp=CAU" alt="Logo 3" />
+        </div>
+      </div>
     </div>
   );
 };
 
 export default Intro;
+
 
 
 

@@ -4,6 +4,7 @@
   border-radius: 5vh;
   padding: 2vh;
   box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.1);
+  background-size: cover;
   color: white;
   border: 0.2vw solid white;
   width: 85vw;
@@ -15,7 +16,7 @@
 
 .intro-content {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 2vh;
@@ -57,4 +58,22 @@
   text-decoration: none;
 }
 
+.logos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 2vh;
+}
 
+.logo {
+  margin: 1vh 0;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 6vw;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.2);
+}

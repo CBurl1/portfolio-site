@@ -1,72 +1,78 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .contact-card {
   background: url("https://images.unsplash.com/photo-1557264337-e8a93017fe92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80") no-repeat center center;
   background-size: cover;
   border-radius: 5vh;
   padding: 2vh;
   box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.1);
+  background-size: cover;
   color: white;
   border: 0.2vw solid white;
   width: 85vw;
   height: 90vh;
   margin: 0 auto;
-  display: flex; /* Use flexbox to center the items */
-  flex-direction: column; /* Stack the items vertically */
-  justify-content: center; /* Center items vertically */
-  align-items: center; /* Center items horizontally */
   position: relative;
   overflow: scroll;
 }
 
-.contact-item {
-  background-color: #2f3542;
-  width: 60vw;
-  border-radius: 5px;
-  padding: 1.5vw;
+.contact-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2vh;
   color: white;
-  border: 2px solid white;
-  margin-bottom: 3vh;
+  text-align: center;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.contact-item {
+  margin-bottom: 2vh;
+  background-color: #2f3542; /* Gray background color for text boxes */
+  border: 0.1rem solid white; /* White border for text boxes */
+  border-radius: 5px;
+  padding: 1rem;
+  height: 18vh;
 }
 
 .contact-item h3 {
+  font-size: 5vh;
   margin-bottom: 1vh;
 }
 
 .contact-item p {
-  margin-bottom: 1vh;
+  font-size: 3.5vh;
 }
 
-.contact-item a {
-  color: white;
-  text-decoration: none;
+/* New styles for logos */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 6vh;
 }
 
-.contact-item a:hover {
-  text-decoration: underline;
-}
-
-.contact-button {
-  display: block;
-  margin: 0 auto;
-  padding: 1.5vh 3vh;
-  background-color: #0585e1;
-  text-decoration: none;
-  border: none;
-  border-radius: 4px;
-  color: white;
+.logo {
   cursor: pointer;
+  margin: 0 1rem;
 }
 
-.contact-button:hover {
-  background-color: #e54fef;
-  text-decoration: none;
+.logo img {
+  width: 7rem;
+  height: 7rem;
+  object-fit: contain;
+  border-radius: 20%;
 }
 
-.contact-button a {
-  color: #fff;
-  text-decoration: none;
-}
 
-.contact-button a:hover {
-  text-decoration: none;
-}
+
+
+
+
 
