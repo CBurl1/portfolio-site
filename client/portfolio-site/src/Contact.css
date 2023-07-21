@@ -65,9 +65,9 @@
 
 .logo img {
   width: 7rem;
-  height: 7rem;
-  object-fit: contain;
-  border-radius: 20%;
+  height: auto;
+  aspect-ratio: 3/2;
+  border-radius: 50%;
 }
 
 
