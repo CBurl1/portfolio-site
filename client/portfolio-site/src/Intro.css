@@ -1,3 +1,4 @@
+/* Intro Card Styles */
 .intro-card {
   background: url("https://images.unsplash.com/photo-1557264337-e8a93017fe92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80") no-repeat center center;
   background-size: cover;
@@ -11,73 +12,60 @@
   height: 90vh;
   margin: 0 auto;
   position: relative;
-  overflow: scroll;
+  overflow: hidden;
 }
 
-.intro-content {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 2vh;
-  color: white;
+.projects-carousel {
+  display: flex;
+}
+
+.project-carousel-item {
+  width: 20vw;
+  padding: 20px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #2f3542;
   border-radius: 5px;
-  z-index: 1;
+  border: 0.2vh solid white;
 }
 
-.intro-content h1 {
-  font-size: 3vh;
-  margin-bottom: 2vh;
+.project-carousel-item.active {
+  transform: translateX(calc(-100% / 3));
 }
 
-.intro-content p {
-  font-size: 2vh;
+.project-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
-.custom-button {
-  display: block;
-  margin: 0 auto;
-  padding: 1vh 2vw;
-  background-color: #0585e1;
-  text-decoration: none;
-  border: none;
-  border-radius: 2vw;
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
   color: white;
-  cursor: pointer;
 }
 
-.custom-button:hover {
-  background-color: #e54fef;
-  text-decoration: none;
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ddd;
 }
 
-.custom-button a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.logos-container {
-  transform: translateY(15%); /* Adjust position to center vertically */
+.project-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 4vh 0; /* Increase padding for more vertical spacing */
+  align-items: center;
 }
 
-.logo {
-  margin: 2vh 0; /* Increase margin for more vertical spacing */
-  cursor: pointer;
-  margin-top: 20vh;
+/* Hide scrollbar */
+.projects-carousel::-webkit-scrollbar {
+  display: none;
 }
 
 
-.logo img {
-  width: 7rem;
-  height: auto;
-  aspect-ratio: 3/2;
-  border-radius: 50%;
-}
+
+
+
+
 
