@@ -15,17 +15,35 @@
   overflow: hidden;
 }
 
+.intro-content {
+  width: 80%;
+  max-width: 600px; /* Set a maximum width if needed */
+  margin: 0 auto; /* Center horizontally */
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a box shadow */
+}
+
+
+
 .projects-carousel {
   display: flex;
+  justify-content: center; /* Center projects horizontally */
+  flex-wrap: nowrap; /* Prevent projects from wrapping to the next row */
+  overflow: hidden; /* Hide overflow if projects exceed the container width */
 }
 
 .project-carousel-item {
-  width: 20vw;
-  padding: 20px;
+  width: 15vw; /* Reduce the width of the project item */
+  padding: 10px; /* Reduce the padding */
   text-align: center;
   background-color: #2f3542;
-  border-radius: 5px;
+  border-radius: 50px;
   border: 0.2vh solid white;
+  margin-right: 10px; /* Add some space between projects */
 }
 
 .project-carousel-item.active {
