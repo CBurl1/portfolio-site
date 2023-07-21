@@ -59,18 +59,20 @@
 }
 
 .logos-container {
-  top: 35%;
+  transform: translateY(15%); /* Adjust position to center vertically */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  padding: 2vh;
+  padding: 4vh 0; /* Increase padding for more vertical spacing */
 }
 
 .logo {
-  margin: 1vh 0;
+  margin: 2vh 0; /* Increase margin for more vertical spacing */
   cursor: pointer;
+  margin-top: 20vh;
 }
+
 
 .logo img {
   width: 7rem;
@@ -78,3 +80,4 @@
   aspect-ratio: 3/2;
   border-radius: 50%;
 }
+
