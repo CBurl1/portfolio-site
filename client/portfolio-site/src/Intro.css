@@ -25,7 +25,7 @@
   border-radius: 5px;
   z-index: 1;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a box shadow */
-  margin-bottom: 10vh;
+  margin-bottom: 3vh;
   margin-top: 5vh;
 }
 
@@ -40,11 +40,8 @@
 
 .project-carousel-item {
   width: 25vw; /* Reduce the width of the project item */
-  height: auto;
-  padding: 0.5vw; /* Reduce the padding */
   text-align: center;
   background-color: #2f3542;
-  border-radius: 50px;
   border: 0.2vh solid white;
   margin-right: 10px; /* Add some space between projects */
 }
@@ -61,20 +58,46 @@
 
 h3 {
   font-size: 20px;
-  color: white;
+  color: #fff;
 }
 
-p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: white;
+.projects-heading {
+  background-color: #2f3542;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 50vw;
+  margin-bottom: 2vh;
+  border: 0.2vh solid white;
+  text-align: center;
 }
+
 
 /* Hide scrollbar */
 .projects-carousel::-webkit-scrollbar {
   display: none;
 }
 
+.custom-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #0585e1;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.custom-button:hover {
+  background-color: #e54fef;
+}
+
+.custom-button a {
+  color: #fff;
+  text-decoration: none;
+}
 
 
 

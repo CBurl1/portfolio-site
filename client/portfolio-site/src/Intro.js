@@ -41,7 +41,7 @@ const Intro = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentProject((prevProject) => (prevProject + 1) % projects.length);
-    }, 2000); // Change project every 5 seconds
+    }, 2000);
 
     return () => clearInterval(interval);
   }, [projects.length]);
@@ -57,26 +57,26 @@ const Intro = () => {
           Enter
         </button>
       </div>
+      <div className="projects-heading">
+        Featured Projects
+      </div>
       <div className="projects-carousel">
         <div className="project-carousel-item">
           <h3>{projects[currentProject].title}</h3>
           <div className="project-content">
             <img src={projects[currentProject].image} alt={projects[currentProject].title} className="project-image" />
-            <p>{projects[currentProject].description}</p>
           </div>
         </div>
         <div className="project-carousel-item">
           <h3>{projects[(currentProject + 1) % projects.length].title}</h3>
           <div className="project-content">
             <img src={projects[(currentProject + 1) % projects.length].image} alt={projects[(currentProject + 1) % projects.length].title} className="project-image" />
-            <p>{projects[(currentProject + 1) % projects.length].description}</p>
           </div>
         </div>
         <div className="project-carousel-item">
           <h3>{projects[(currentProject + 2) % projects.length].title}</h3>
           <div className="project-content">
             <img src={projects[(currentProject + 2) % projects.length].image} alt={projects[(currentProject + 2) % projects.length].title} className="project-image" />
-            <p>{projects[(currentProject + 2) % projects.length].description}</p>
           </div>
         </div>
       </div>
