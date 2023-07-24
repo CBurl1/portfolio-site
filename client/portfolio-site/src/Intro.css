@@ -1,7 +1,6 @@
 /* Intro Card Styles */
 .intro-card {
   background: url("https://images.unsplash.com/photo-1557264337-e8a93017fe92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80") no-repeat center center;
-  background-size: cover;
   border-radius: 5vh;
   padding: 2vh;
   box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.1);
@@ -10,40 +9,36 @@
   border: 0.2vw solid white;
   width: 85vw;
   height: 90vh;
+  max-width: 85vw; /* Set a maximum width if needed */
   margin: 0 auto;
-  position: relative;
-  overflow: hidden;
+  overflow: hidden; /* Remove scroll overflow to prevent scrollbar */
 }
 
 .intro-content {
-  width: 80%;
+  width: 80vw;
   max-width: 600px; /* Set a maximum width if needed */
   margin: 0 auto; /* Center horizontally */
   text-align: center;
-  padding: 10px;
+  padding: 1.5vw;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 5px;
   z-index: 1;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a box shadow */
+  box-shadow: 0 0.8vw 1.6vw rgba(0, 0, 0, 0.2); /* Add a box shadow */
   margin-bottom: 3vh;
-  margin-top: 5vh;
+  margin-top: 3vh;
 }
-
-
 
 .projects-carousel {
   display: flex;
-  justify-content: center; /* Center projects horizontally */
-  flex-wrap: nowrap; /* Prevent projects from wrapping to the next row */
-  overflow: hidden; /* Hide overflow if projects exceed the container width */
+  justify-content: center;
 }
 
 .project-carousel-item {
-  width: 25vw; /* Reduce the width of the project item */
+  width: 25vw;
   text-align: center;
   background-color: #2f3542;
   border: 0.2vh solid white;
-  margin-right: 10px; /* Add some space between projects */
+  margin-right: 1vw;
 }
 
 .project-carousel-item.active {
@@ -52,26 +47,24 @@
 
 .project-image {
   width: 100%;
-  object-fit: cover;
-  border-radius: 5px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 2.5vw;
   color: #fff;
 }
 
 .projects-heading {
   background-color: #2f3542;
-  padding: 1rem;
+  padding: 1.5vh;
   border-radius: 5px;
   margin: 0 auto;
-  width: 50vw;
+  max-width: 20vw; /* Set a maximum width if needed */
   margin-bottom: 2vh;
   border: 0.2vh solid white;
   text-align: center;
+  font-size: 1.2vw;
 }
-
 
 /* Hide scrollbar */
 .projects-carousel::-webkit-scrollbar {
@@ -80,14 +73,14 @@ h3 {
 
 .custom-button {
   display: inline-block;
-  padding: 8px 16px;
+  padding: 1vh 2vw;
   background-color: #0585e1;
   text-decoration: none;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin-right: 1vw;
+  margin-bottom: 2vh;
 }
 
 .custom-button:hover {
@@ -98,6 +91,7 @@ h3 {
   color: #fff;
   text-decoration: none;
 }
+
 
 
 

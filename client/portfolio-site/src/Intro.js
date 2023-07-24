@@ -57,9 +57,11 @@ const Intro = () => {
           Enter
         </button>
       </div>
-      <div className="projects-heading">
-        Featured Projects
-      </div>
+      {/* <div className="projects-heading">
+        <h2>
+          Featured Projects
+        </h2>
+        </div> */}
       <div className="projects-carousel">
         <div className="project-carousel-item">
           <h3>{projects[currentProject].title}</h3>
