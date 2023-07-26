@@ -73,10 +73,10 @@ const Projects = () => {
             </p>
             <div className="project-buttons">
               <button className="project-button">
-                <a href="URL_TO_DEMO">Watch a Demo</a>
+                <a href="https://www.loom.com/share/33c5d5a064a74bffb5e62cf61ceb0515?sid=7646cda6-8780-4b4d-a16e-181291a27cca">Watch a Demo</a>
               </button>
               <button className="project-button">
-                <a href="URL_TO_GITHUB">Checkout the GitHub</a>
+                <a href="https://github.com/CBurl1/seasonal-produce-educator">Checkout the GitHub</a>
               </button>
             </div>
           </div>
@@ -92,10 +92,10 @@ const Projects = () => {
             </p>
             <div className="project-buttons">
               <button className="project-button">
-                <a href="URL_TO_DEMO">Watch a Demo</a>
+                <a href="https://www.loom.com/share/c319bc1bd3a64593987db1d9cbf2506f?sid=26ce2f9a-be32-47fc-8c4c-885192bc2ef1">Watch a Demo</a>
               </button>
               <button className="project-button">
-                <a href="URL_TO_GITHUB">Checkout the GitHub</a>
+                <a href="https://github.com/CBurl1/skishop-react-frontend">Checkout the GitHub</a>
               </button>
             </div>
           </div>
