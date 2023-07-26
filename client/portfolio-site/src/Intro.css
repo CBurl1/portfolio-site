@@ -42,7 +42,11 @@
 }
 
 .project-carousel-item.active {
-  transform: translateX(calc(-100% / 3));
+  transition: transform 0.3s ease;
+}
+
+.project-carousel-item:hover {
+  transform: scale(1.1); /* Increase the size of the item on hover */
 }
 
 .project-image {
