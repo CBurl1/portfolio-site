@@ -41,10 +41,22 @@ const Intro = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentProject((prevProject) => (prevProject + 1) % projects.length);
-    }, 2000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [projects.length]);
+
+  const navigateCarousel = (direction) => {
+    if (direction === 'next') {
+      setCurrentProject((prevProject) => (prevProject + 1) % projects.length);
+    } else if (direction === 'prev') {
+      setCurrentProject((prevProject) => (prevProject - 1 + projects.length) % projects.length);
+    }
+  };
+
+  const navigateCarouselTo = (index) => {
+    setCurrentProject(index);
+  };
 
   return (
     <div className="intro-card">
@@ -57,36 +69,42 @@ const Intro = () => {
           Enter
         </button>
       </div>
-      {/* <div className="projects-heading">
-        <h2>
-          Featured Projects
-        </h2>
-        </div> */}
+      <div className="carousel-arrows">
+        <span className="arrow prev-arrow" onClick={() => navigateCarousel('prev')}>
+          &larr;
+        </span>
+        <span className="arrow next-arrow" onClick={() => navigateCarousel('next')}>
+          &rarr;
+        </span>
+      </div>
+      <div className="dot-navigation">
+        {projects.map((_, index) => (
+          <span
+            key={index}
+            className={`dot ${index === currentProject ? 'active-dot' : ''}`}
+            onClick={() => navigateCarouselTo(index)}
+          />
+        ))}
+      </div>
       <div className="projects-carousel">
-        <div className="project-carousel-item">
-          <h3>{projects[currentProject].title}</h3>
-          <div className="project-content">
-            <img src={projects[currentProject].image} alt={projects[currentProject].title} className="project-image" />
+        {projects.map((project, index) => (
+          <div
+            key={index}
+            className={`project-carousel-item ${index === currentProject ? 'active' : ''}`}
+          >
+            <h3>{project.title}</h3>
+            <div className="project-content">
+              <img src={project.image} alt={project.title} className="project-image" />
+            </div>
           </div>
-        </div>
-        <div className="project-carousel-item">
-          <h3>{projects[(currentProject + 1) % projects.length].title}</h3>
-          <div className="project-content">
-            <img src={projects[(currentProject + 1) % projects.length].image} alt={projects[(currentProject + 1) % projects.length].title} className="project-image" />
-          </div>
-        </div>
-        <div className="project-carousel-item">
-          <h3>{projects[(currentProject + 2) % projects.length].title}</h3>
-          <div className="project-content">
-            <img src={projects[(currentProject + 2) % projects.length].image} alt={projects[(currentProject + 2) % projects.length].title} className="project-image" />
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
 };
 
 export default Intro;
+
 
 
 

@@ -31,6 +31,8 @@
 .projects-carousel {
   display: flex;
   justify-content: center;
+  position: relative; /* Add position to contain arrows and dots */
+  overflow: hidden; /* Ensure the fade effect works correctly */
 }
 
 .project-carousel-item {
@@ -39,10 +41,14 @@
   background-color: #2f3542;
   border: 0.2vh solid white;
   margin-right: 1vw;
+  position: absolute; /* Position carousel items absolutely for the fade effect */
+  opacity: 0; /* Start with all items hidden */
+  transition: opacity 0.5s ease; /* Add fade effect transition */
 }
 
 .project-carousel-item.active {
-  transition: transform 0.3s ease;
+  transform: translateX(0); /* Slide active item into view */
+  opacity: 1; /* Show active item */
 }
 
 .project-carousel-item:hover {
@@ -96,9 +102,44 @@ h3 {
   text-decoration: none;
 }
 
+/* Styles for arrows */
+.carousel-arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+  z-index: 2;
+}
 
+.arrow {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  margin: 0 10px;
+}
 
+/* Styles for dot navigation */
+.dot-navigation {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
 
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active-dot {
+  background-color: #e54fef;
+}
 
 
 
