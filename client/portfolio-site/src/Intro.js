@@ -26,10 +26,6 @@ const Intro = () => {
       title: 'Ski Shop',
       image: 'https://cdna.artstation.com/p/assets/images/images/048/109/936/large/kivanc-yucel-snowy-area2.jpg?1649234808',
     },
-    {
-      title: 'Portfolio Site',
-      image: 'https://img.freepik.com/premium-vector/old-computer-pixel-art-style_475147-1000.jpg',
-    },
   ];
 
   const navigate = useNavigate();
@@ -68,14 +64,6 @@ const Intro = () => {
         <button className="custom-button" onClick={handleClick}>
           Enter
         </button>
-      </div>
-      <div className="carousel-arrows">
-        <span className="arrow prev-arrow" onClick={() => navigateCarousel('prev')}>
-          &larr;
-        </span>
-        <span className="arrow next-arrow" onClick={() => navigateCarousel('next')}>
-          &rarr;
-        </span>
       </div>
       <div className="dot-navigation">
         {projects.map((_, index) => (
