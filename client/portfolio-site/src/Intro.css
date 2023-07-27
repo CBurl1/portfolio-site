@@ -1,5 +1,6 @@
 /* Intro Card Styles */
 .intro-card {
+  position: relative;
   background: url("https://images.unsplash.com/photo-1557264337-e8a93017fe92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80") no-repeat center center;
   border-radius: 5vh;
   padding: 2vh;
@@ -23,19 +24,19 @@
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 5px;
   z-index: 1;
-  box-shadow: 0 0.8vw 1.6vw rgba(0, 0, 0, 0.2);
   margin-bottom: 3vh;
   margin-top: 3vh;
 }
 
 .projects-carousel {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;  /* Updated from 'space-around' */
   align-items: center;
   width: 100%;
   position: relative;
   height: 50vh;
 }
+
 
 .project-carousel-item {
   width: 20%;
@@ -44,7 +45,7 @@
   border: 2px solid white;
   text-align: center;
   opacity: 1;
-  margin: 10px;
+  margin: 0.2vw;
   height: 80%; 
 }
 
@@ -63,14 +64,21 @@
 }
 
 .projects-heading {
-  background-color: #2f3542;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 1.5vh;
   border-radius: 5px;
-  margin: 0 auto;
-  max-width: 20vw;
-  margin-bottom: 0.5vh;
-  border: 0.2vh solid white;
+  margin: 0 auto 2vh;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.projects-heading h2 {
+  font-size: 3.5vh;
 }
 
 .projects-carousel::-webkit-scrollbar {
@@ -78,6 +86,10 @@
 }
 
 .dot-navigation {
+  position: absolute;
+  bottom: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   margin-bottom: 1vh;
 }
@@ -96,6 +108,8 @@
 .active-dot {
   background-color: #717171;
 }
+
+
 
 
 
