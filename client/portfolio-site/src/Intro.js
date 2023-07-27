@@ -59,12 +59,6 @@ const Intro = () => {
     <div className="intro-card">
       <div className="intro-content">
         <h1>Collin Burleigh - Full Stack Developer</h1>
-        <p>
-          Welcome to my portfolio website! As a full stack developer, I am excited to showcase my experience and skills in web development. Enter through the button below to learn more about me and my work!
-        </p>
-        <button className="custom-button" onClick={handleClick}>
-          Enter
-        </button>
       </div>
       <div className="dot-navigation">
         {projects.map((_, index) => (
