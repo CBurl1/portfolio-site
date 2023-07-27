@@ -81,8 +81,10 @@ const Intro = () => {
               className={`project-carousel-item ${currentProjects.includes(index) ? 'active' : ''}`}
             >
               <h3>{project.title}</h3>
-              <div className="project-content">
-                <img src={project.image} alt={project.title} className="project-image" />
+              <div 
+                className="project-content"
+                style={{ backgroundImage: `url(${project.image})` }}
+              >
               </div>
             </div>
           );
@@ -93,6 +95,7 @@ const Intro = () => {
 };
 
 export default Intro;
+
 
 
 
