@@ -74,6 +74,9 @@ const Intro = () => {
           />
         ))}
       </div>
+      <div className="projects-heading">
+        <h2>Featured Projects</h2>
+      </div>
       <div className="projects-carousel">
         {projects.map((project, index) => (
           <div
