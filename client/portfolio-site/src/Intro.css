@@ -31,32 +31,23 @@
 .projects-carousel {
   display: flex;
   justify-content: center;
-  position: relative; /* Add position to contain arrows and dots */
 }
 
 .project-carousel-item {
-  width: 50vw; /* Adjust the width to occupy the full width of the carousel */
-  height: auto;
-  text-align: center;
-  background-color: #2f3542;
-  border: 0.2vh solid white;
-  margin: auto ;
-  position: absolute; /* Position carousel items absolutely for the fade effect */
-  opacity: 0; /* Start with all items hidden */
-  transform: translateX(-100%);
-}
+    background-color: #2f3542;
+    border-radius: 5px;
+    border: 2px solid white;
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+  }
 
 .project-carousel-item.active {
-  transform: translateX(0);
   opacity: 1; /* Show active item */
 }
 
 .project-carousel-item:hover {
   transform: scale(1.1); /* Increase the size of the item on hover */
-}
-
-.project-image {
-  width: 100%;
 }
 
 h3 {
@@ -105,7 +96,7 @@ h3 {
 .dot-navigation {
   position: absolute;
   bottom: 10px;
-  left: 50%;
+  left: 55%;
   transform: translateX(-50%);
   z-index: 2;
 }
