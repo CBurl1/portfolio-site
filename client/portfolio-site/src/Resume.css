@@ -15,7 +15,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
+
 
 @media screen and (min-width: 768px) {
   .resume-card {
@@ -45,7 +47,7 @@
 .resume-item {
   background-color: #2f3542;
   border-radius: 5px;
-  padding: 20px;
+  padding: 1vh;
   color: #2f3542;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 10px;

@@ -2,19 +2,48 @@
 .aboutme-card {
   background: url("https://images.unsplash.com/photo-1557264337-e8a93017fe92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80") no-repeat center center;
   background-size: cover;
-  border-radius: 5vh; /* Use 5vh instead of 10px for consistent border radius */
+  border-radius: 5vh;
   padding: 2vh;
-  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.1); /* Adjust box-shadow values with vh */
+  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.1);
   color: white;
-  border: 0.2vw solid white; /* Adjust the border width with vw */
+  border: 0.2vw solid white;
   width: 85vw;
   height: 90vh;
   margin: 0 auto;
   position: relative;
-  overflow: scroll; /* Hide any potential overflow from the image */
+  overflow: scroll;
 }
 
-/* Remove flexbox styles from .aboutme-container */
+@media (max-width: 768px) {
+  .aboutme-card {
+    width: 100vw; /* Full width */
+    height: auto; /* Allow for content height */
+    padding: 4vw; /* Add more padding for smaller screens */
+  }
+
+  .aboutme-container {
+    max-width: 100vw; /* Full width */
+  }
+
+  .aboutme-item {
+    width: 100%; /* Full width */
+    margin: 2vw auto; /* Relative to the viewport width */
+    padding: 1.5vw; /* Relative to the viewport width */
+  }
+
+  .aboutme-item h3 {
+    font-size: 4vw; /* Relative to the viewport width */
+  }
+
+  .aboutme-item p {
+    font-size: 3vw; /* Relative to the viewport width */
+  }
+
+  .overlay {
+    padding: 2vw; /* Relative to the viewport width */
+  }
+}
+
 .aboutme-container {
   width: 100%;
   max-width: 80vw; /* Adjust the max-width as needed with vw */
@@ -22,7 +51,6 @@
   padding: 2vh; /* Adjust padding with vh */
 }
 
-/* Adjust .aboutme-item styles for one column */
 .aboutme-item {
   background-color: #2f3542;
   border-radius: 2vh;
@@ -60,7 +88,6 @@
 }
 
 .overlay {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -74,6 +101,10 @@
   align-items: center;
   box-sizing: border-box; /* Ensure padding is included in the overlay size */
 }
+
+
+
+
 
 
 

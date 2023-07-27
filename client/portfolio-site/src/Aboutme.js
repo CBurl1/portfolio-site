@@ -22,7 +22,7 @@ const AboutMe = () => {
               <div className="aboutme-item">
                 <h3>What are my hobbies?</h3>
                 <p>
-                  When I'm not coding, you can usually find me outdoors. I play many sports, help coach a high school baseball team, and love being with family. I thrive on adventure and enjoy the challenge of trying new things.
+                  When I'm not coding, you can usually find me outdoors. I am an athlete, help coach a high school baseball team, and love being with family. I thrive on adventure and enjoy the challenge of trying new things.
                 </p>
               </div>
             </div>
