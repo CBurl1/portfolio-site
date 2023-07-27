@@ -30,24 +30,23 @@
 
 .projects-carousel {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  width: 100%;
+  position: relative;
+  height: 50vh; /* Adjust based on your preference */
 }
 
 .project-carousel-item {
-    background-color: #2f3542;
-    border-radius: 5px;
-    border: 2px solid white;
-    text-align: center;
-    opacity: 0;
-    position: absolute;
-  }
-
-.project-carousel-item.active {
-  opacity: 1; /* Show active item */
-}
-
-.project-carousel-item:hover {
-  transform: scale(1.1); /* Increase the size of the item on hover */
+  background-color: #2f3542;
+  border-radius: 5px;
+  border: 2px solid white;
+  text-align: center;
+  opacity: 1;
+  position: relative;
+  width: calc(100% / 3 - 20px); /* minus 20px for margin */
+  margin: 10px;
+  height: 100%;
+  transition: opacity 1s ease-in-out; /* optional: to smooth transition */
 }
 
 h3 {
@@ -85,35 +84,30 @@ h3 {
 }
 
 .custom-button:hover {
-  background-color: #e54fef;
-}
-
-.custom-button a {
-  color: #fff;
-  text-decoration: none;
+  background-color: #006dbe;
 }
 
 .dot-navigation {
-  position: absolute;
-  bottom: 10px;
-  left: 55%;
-  transform: translateX(-50%);
-  z-index: 2;
+  text-align: center;
+  margin-bottom: 1vh;
 }
 
 .dot {
-  width: 8px;
-  height: 8px;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
   border-radius: 50%;
-  background-color: #fff;
-  margin: 0 5px;
   display: inline-block;
+  transition: background-color 0.6s ease;
   cursor: pointer;
 }
 
-.dot.active-dot {
-  background-color: #e54fef;
+.active-dot {
+  background-color: #717171;
 }
+
+
 
 
 

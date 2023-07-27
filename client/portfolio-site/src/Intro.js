@@ -4,7 +4,6 @@ import './Intro.css';
 import blockbuster from './blockbuster.png';
 
 const Intro = () => {
-  const [currentProject, setCurrentProject] = useState(0);
   const projects = [
     {
       title: 'Parki',
@@ -28,6 +27,8 @@ const Intro = () => {
     },
   ];
 
+  const [currentProjects, setCurrentProjects] = useState([0, 1, 2]);
+
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -36,22 +37,22 @@ const Intro = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentProject((prevProject) => (prevProject + 1) % projects.length);
+      setCurrentProjects(prevProjects => [
+        (prevProjects[0] + 1) % projects.length,
+        (prevProjects[1] + 1) % projects.length,
+        (prevProjects[2] + 1) % projects.length,
+      ]);
     }, 2000);
 
     return () => clearInterval(interval);
   }, [projects.length]);
 
-  const navigateCarousel = (direction) => {
-    if (direction === 'next') {
-      setCurrentProject((prevProject) => (prevProject + 1) % projects.length);
-    } else if (direction === 'prev') {
-      setCurrentProject((prevProject) => (prevProject - 1 + projects.length) % projects.length);
-    }
-  };
-
   const navigateCarouselTo = (index) => {
-    setCurrentProject(index);
+    setCurrentProjects([
+      index,
+      (index + 1) % projects.length,
+      (index + 2) % projects.length,
+    ]);
   };
 
   return (
@@ -69,7 +70,7 @@ const Intro = () => {
         {projects.map((_, index) => (
           <span
             key={index}
-            className={`dot ${index === currentProject ? 'active-dot' : ''}`}
+            className={`dot ${currentProjects.includes(index) ? 'active-dot' : ''}`}
             onClick={() => navigateCarouselTo(index)}
           />
         ))}
@@ -78,23 +79,29 @@ const Intro = () => {
         <h2>Featured Projects</h2>
       </div>
       <div className="projects-carousel">
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className={`project-carousel-item ${index === currentProject ? 'active' : ''}`}
-          >
-            <h3>{project.title}</h3>
-            <div className="project-content">
-              <img src={project.image} alt={project.title} className="project-image" />
+        {currentProjects.map((index) => {
+          const project = projects[index];
+          return (
+            <div
+              key={index}
+              className={`project-carousel-item ${currentProjects.includes(index) ? 'active' : ''}`}
+            >
+              <h3>{project.title}</h3>
+              <div className="project-content">
+                <img src={project.image} alt={project.title} className="project-image" />
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );
 };
 
 export default Intro;
+
+
+
 
 
 
