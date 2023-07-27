@@ -16,63 +16,63 @@
 
 @media (max-width: 768px) {
   .aboutme-card {
-    width: 100vw; /* Full width */
-    height: auto; /* Allow for content height */
-    padding: 4vw; /* Add more padding for smaller screens */
+    width: 90vw; /* Adjust the width */
+    height: auto; 
+    padding: 0.5vw; /* Increase the padding */
   }
 
   .aboutme-container {
-    max-width: 100vw; /* Full width */
+    max-width: 90vw; 
   }
 
   .aboutme-item {
-    width: 100%; /* Full width */
-    margin: 2vw auto; /* Relative to the viewport width */
-    padding: 1.5vw; /* Relative to the viewport width */
+    width: 100%; 
+    margin: 2vw auto; 
+    padding: 1vw; 
   }
 
   .aboutme-item h3 {
-    font-size: 4vw; /* Relative to the viewport width */
+    font-size: 4vw; 
   }
 
   .aboutme-item p {
-    font-size: 3vw; /* Relative to the viewport width */
+    font-size: 3vw; 
   }
 
   .overlay {
-    padding: 2vw; /* Relative to the viewport width */
+    padding: 2vw; 
   }
 }
 
 .aboutme-container {
   width: 100%;
-  max-width: 80vw; /* Adjust the max-width as needed with vw */
-  margin: 1vh auto 0; /* Bring the container down with a margin-top of 4vh */
-  padding: 2vh; /* Adjust padding with vh */
+  max-width: 80vw; 
+  margin: 1vh auto 0; 
+  padding: 2vh; 
 }
 
 .aboutme-item {
   background-color: #2f3542;
-  border-radius: 2vh;
-  padding: 1.5vh; /* Reduce the padding to move the content higher up */
+  border-radius: 5px;
+  padding: 1.5vh;
   color: #ffffff;
-  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.1); /* Adjust box-shadow values with vh */
-  width: 90%; /* Set a fixed width for the items */
-  margin: 2vh auto; /* Use auto margins to center the items */
-  border: 0.2vw solid white; /* Adjust the border width with vw */
+  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.1);
+  width: 90%; 
+  margin: 2vh auto;
+  border: 0.2vw solid white; 
 }
 
 .aboutme-item h3 {
-  margin-bottom: 1.5vh; /* Reduce the bottom margin to move the heading higher up */
-  font-size: 3vh; /* Adjust the font size with vh */
-  text-align: center; /* Center the headings within the items */
+  margin-bottom: 1vh; 
+  font-size: 3vh; 
+  text-align: center; 
 }
 
 .aboutme-item p {
-  margin-bottom: 1.5vh; /* Reduce the bottom margin to move the paragraph higher up */
-  font-size: 2.5vh; /* Adjust the font size with vh */
+  margin-bottom: 1.5vh;
+  font-size: 2.5vh; 
   line-height: 1.6;
-  text-align: justify; /* Justify the text within the items */
+  text-align: justify;
 }
 
 .image-container {
@@ -84,7 +84,7 @@
   width: 100%;
   height: auto;
   display: block;
-  opacity: 1; /* Make the image fully visible */
+  opacity: 1; 
 }
 
 .overlay {
@@ -92,15 +92,16 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0); /* Set the alpha value to 0 for full transparency */
+  background-color: rgba(0, 0, 0, 0); 
   color: white;
   padding: 2vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box; /* Ensure padding is included in the overlay size */
+  box-sizing: border-box; 
 }
+
 
 
 

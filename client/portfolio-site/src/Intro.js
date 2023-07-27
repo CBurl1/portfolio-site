@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import './Intro.css';
 import blockbuster from './blockbuster.png';
 
@@ -29,11 +28,6 @@ const Intro = () => {
 
   const [currentProjects, setCurrentProjects] = useState([0, 1, 2]);
 
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate('/projects');
-  };
 
   useEffect(() => {
     const interval = setInterval(() => {

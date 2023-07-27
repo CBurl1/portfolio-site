@@ -1,9 +1,3 @@
-/* .contact-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-} */
 
 .contact-card {
   background: url("https://images.unsplash.com/photo-1557264337-e8a93017fe92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80") no-repeat center center;
@@ -35,8 +29,8 @@
 
 .contact-item {
   margin-bottom: 2vh;
-  background-color: #2f3542; /* Gray background color for text boxes */
-  border: 0.1rem solid white; /* White border for text boxes */
+  background-color: #2f3542;
+  border: 0.1rem solid white;
   border-radius: 5px;
   padding: 1rem;
   height: 18vh;
@@ -51,7 +45,6 @@
   font-size: 3.5vh;
 }
 
-/* New styles for logos */
 .logo-container {
   display: flex;
   justify-content: center;
