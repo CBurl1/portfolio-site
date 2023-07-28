@@ -16,10 +16,10 @@ const Projects = () => {
             </p>
             <div className="project-buttons">
               <button className="project-button">
-                <a href="https://www.loom.com/share/0969ad61551f4a20aa0475f60eacdc48?sid=bd930275-a07b-4f6c-9f68-6597398a82be">Watch a Demo</a>
+                <a href="https://www.loom.com/share/0969ad61551f4a20aa0475f60eacdc48?sid=bd930275-a07b-4f6c-9f68-6597398a82be" target="_blank" rel="noreferrer">Watch a Demo</a>
               </button>
               <button className="project-button">
-                <a href="https://github.com/CBurl1/parki">Checkout the GitHub</a>
+                <a href="https://github.com/CBurl1/parki" target="_blank" rel="noreferrer">Checkout the GitHub</a>
               </button>
             </div>
           </div>
@@ -35,10 +35,10 @@ const Projects = () => {
             </p>
             <div className="project-buttons">
               <button className="project-button">
-                <a href="https://www.loom.com/share/b4a2a4b99ca0436282f36163a2b26fca?sid=c4189144-a7c3-473e-b7ca-56cf54105b6e">Watch a Demo</a>
+                <a href="https://www.loom.com/share/b4a2a4b99ca0436282f36163a2b26fca?sid=c4189144-a7c3-473e-b7ca-56cf54105b6e" target="_blank" rel="noreferrer">Watch a Demo</a>
               </button>
               <button className="project-button">
-                <a href="https://github.com/CBurl1/blockbuster-employee-portal">Checkout the GitHub</a>
+                <a href="https://github.com/CBurl1/blockbuster-employee-portal" target="_blank" rel="noreferrer">Checkout the GitHub</a>
               </button>
             </div>
           </div>
@@ -54,10 +54,10 @@ const Projects = () => {
             </p>
             <div className="project-buttons">
               <button className="project-button">
-                <a href="https://www.loom.com/share/ef7adf3dce6b47a79b902834fefb9eb1?sid=bb162cd5-19d9-4820-9f82-294303372211">Watch a Demo</a>
+                <a href="https://www.loom.com/share/ef7adf3dce6b47a79b902834fefb9eb1?sid=bb162cd5-19d9-4820-9f82-294303372211" target="_blank" rel="noreferrer">Watch a Demo</a>
               </button>
               <button className="project-button">
-                <a href="https://github.com/CBurl1/music-CLI">Checkout the GitHub</a>
+                <a href="https://github.com/CBurl1/music-CLI" target="_blank" rel="noreferrer">Checkout the GitHub</a>
               </button>
             </div>
           </div>
@@ -73,10 +73,10 @@ const Projects = () => {
             </p>
             <div className="project-buttons">
               <button className="project-button">
-                <a href="https://www.loom.com/share/33c5d5a064a74bffb5e62cf61ceb0515?sid=7646cda6-8780-4b4d-a16e-181291a27cca">Watch a Demo</a>
+                <a href="https://www.loom.com/share/33c5d5a064a74bffb5e62cf61ceb0515?sid=7646cda6-8780-4b4d-a16e-181291a27cca" target="_blank" rel="noreferrer">Watch a Demo</a>
               </button>
               <button className="project-button">
-                <a href="https://github.com/CBurl1/seasonal-produce-educator">Checkout the GitHub</a>
+                <a href="https://github.com/CBurl1/seasonal-produce-educator" target="_blank" rel="noreferrer">Checkout the GitHub</a>
               </button>
             </div>
           </div>
@@ -92,31 +92,21 @@ const Projects = () => {
             </p>
             <div className="project-buttons">
               <button className="project-button">
-                <a href="https://www.loom.com/share/c319bc1bd3a64593987db1d9cbf2506f?sid=26ce2f9a-be32-47fc-8c4c-885192bc2ef1">Watch a Demo</a>
+                <a href="https://www.loom.com/share/c319bc1bd3a64593987db1d9cbf2506f?sid=26ce2f9a-be32-47fc-8c4c-885192bc2ef1" target="_blank" rel="noreferrer">Watch a Demo</a>
               </button>
               <button className="project-button">
-                <a href="https://github.com/CBurl1/skishop-react-frontend">Checkout the GitHub</a>
+                <a href="https://github.com/CBurl1/skishop-react-frontend" target="_blank" rel="noreferrer">Checkout the GitHub</a>
               </button>
-            </div>
-          </div>
-        </div>
-
-        {/* New Project 6 */}
-        <div className="project-item">
-          <h3>Portfolio Site</h3>
-          <div className="project-content">
-            <img src="https://img.freepik.com/premium-vector/old-computer-pixel-art-style_475147-1000.jpg" alt="Project 6" className="project-image" />
-            <p>
-              This awesome website
-            </p>
             </div>
           </div>
         </div>
       </div>
+    </div>
   );
 }
 
 export default Projects;
+
 
 
 
