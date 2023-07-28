@@ -40,7 +40,13 @@
   flex: 0 0 calc(33.33% - 20px);
   max-width: 400px;
   text-align: center;
+  transition: transform 0.3s; /* Adds a transition effect when scaling */
 }
+
+.project-item:hover {
+  transform: scale(1.05); /* Increase size by 5% when hovered */
+}
+
 
 .project-image {
   width: 100%;
