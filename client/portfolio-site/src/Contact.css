@@ -18,9 +18,10 @@
 
 @media (max-width: 768px) {
   .contact-card {
-    width: 100vw;
-    height: auto;
-    padding: 4vw;
+    width: 85vw;  
+    height: 90vh;
+    padding: 1vh 1vw; /* adjusted padding */
+    margin: 2vh auto;
   }
 }
 
@@ -37,32 +38,29 @@
   background-color: #2f3542;
   border: 0.1rem solid white;
   border-radius: 5px;
-  padding: 2rem;
-  height: 18vh;
+  padding: 1rem;
   width: 90%;
 }
 
 @media (max-width: 768px) {
   .contact-item {
-    height: auto;
-    padding: 1rem;
-    width: 80%;
+    padding: 1.5rem;  
   }
 }
 
 .contact-item h3 {
-  font-size: 5vh;
+  font-size: 3vh;
   margin-bottom: 1vh;
 }
 
 .contact-item p {
-  font-size: 3.5vh;
+  font-size: 2.5vh;
 }
 
 .logo-container {
   display: flex;
   justify-content: center;
-  margin-top: 6vh;
+  margin-top: 2vh;
 }
 
 @media (max-width: 768px) {
@@ -86,9 +84,12 @@
 
 @media (max-width: 768px) {
   .logo img {
-    width: 20vw;
+    width: 20vw; 
   }
 }
+
+
+
 
 
 
