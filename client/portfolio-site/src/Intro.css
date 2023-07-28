@@ -47,6 +47,11 @@
   opacity: 1;
   margin: 0.2vw;
   height: 80%; 
+  transition: transform 0.3s ease;
+}
+
+.project-carousel-item:hover {
+  transform: scale(1.05);
 }
 
 .project-carousel-item h3 {
