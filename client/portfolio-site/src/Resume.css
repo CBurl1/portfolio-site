@@ -55,24 +55,24 @@
   text-align: left;
 
   display: block;
-  font-size: calc(1rem + 0.5vw); /* Adjust here */
+  font-size: calc(1rem + 0.5vw);
 }
 
 .resume-item ul {
   margin-top: 0;
   margin-bottom: 20px;
-  font-size: calc(1rem + 0.5vw); /* Adjust here */
+  font-size: calc(1rem + 0.5vw);
 }
 
 .resume-item ul li {
   list-style-type: disc;
   margin-left: 20px;
-  font-size: calc(1rem + 0.5vw); /* Adjust here */
+  font-size: calc(1rem + 0.5vw);
 }
 
 .resume-item h3 {
   margin-bottom: 10px;
-  font-size: calc(1.2rem + 0.5vw); /* Adjust here */
+  font-size: calc(1.2rem + 0.5vw);
 }
 
 .resume-button {
@@ -85,7 +85,7 @@
   border-radius: 4px;
   color: white;
   cursor: pointer;
-  font-size: calc(1rem + 0.5vw); /* Adjust here */
+  font-size: calc(1rem + 0.5vw);
 }
 
 .resume-button:hover {
@@ -96,7 +96,7 @@
 .resume-button a {
   color: #fff;
   text-decoration: none;
-  font-size: calc(1rem + 0.5vw); /* Adjust here */
+  font-size: calc(1rem + 0.5vw);
 }
 
 body {

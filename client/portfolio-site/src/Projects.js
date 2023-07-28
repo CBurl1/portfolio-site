@@ -7,7 +7,6 @@ const Projects = () => {
     <div className="projects-card">
       <div className="projects-container">
         <div className="project-item">
-          {/* Project 1 */}
           <h3>Parki</h3>
           <div className="project-content">
             <img src="https://i.redd.it/l3ouhs6ncj661.jpg" alt="Project 1" className="project-image" />
@@ -26,7 +25,6 @@ const Projects = () => {
         </div>
 
         <div className="project-item">
-          {/* Project 2 */}
           <h3>Blockbuster Employee Portal</h3>
           <div className="project-content">
             <img src={blockbuster} alt="Project 2" className="project-image" />
@@ -45,7 +43,6 @@ const Projects = () => {
         </div>
 
         <div className="project-item">
-          {/* Project 3 */}
           <h3>Music Player and Storage</h3>
           <div className="project-content">
             <img src="https://static.vecteezy.com/system/resources/previews/021/660/070/original/mp3-player-collection-set-with-different-color-in-pixel-art-style-vector.jpg" alt="Project 3" className="project-image" />
@@ -63,7 +60,6 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* New Project 4 */}
         <div className="project-item">
           <h3>Seasonal Produce Educator</h3>
           <div className="project-content">
@@ -82,7 +78,6 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* New Project 5 */}
         <div className="project-item">
           <h3>Ski Shop</h3>
           <div className="project-content">

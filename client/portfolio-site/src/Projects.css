@@ -1,19 +1,17 @@
 .projects-card {
   background: url("https://images.unsplash.com/photo-1557264337-e8a93017fe92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80") no-repeat center center;
   background-size: cover;
-  border-radius: 5vh; /* Use 5vh instead of 10px for consistent border radius */
+  border-radius: 5vh;
   padding: 2vh;
-  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.1); /* Adjust box-shadow values with vh */
+  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.1);
   color: white;
-  border: 0.2vw solid white; /* Adjust the border width with vw */
+  border: 0.2vw solid white;
   width: 85vw;
   height: 90vh;
   margin: 0 auto;
   position: relative;
-  overflow: scroll; /* Hide any potential overflow from the image */
+  overflow: scroll;
 }
-
-/* Rest of the CSS remains the same */
 
 
 .projects-heading {
@@ -40,28 +38,28 @@
   flex: 0 0 calc(33.33% - 20px);
   max-width: 400px;
   text-align: center;
-  transition: transform 0.3s; /* Adds a transition effect when scaling */
+  transition: transform 0.3s;
 }
 
 .project-item:hover {
-  transform: scale(1.05); /* Increase size by 5% when hovered */
+  transform: scale(1.05);
 }
 
 
 .project-image {
   width: 100%;
-  height: 200px; /* Adjust the desired height */
+  height: 200px;
   object-fit: cover;
   border-radius: 5px;
   margin-bottom: 10px;
 }
 
 .project-content {
-  padding-bottom: 10px; /* Add padding below the text */
+  padding-bottom: 10px;
 }
 
 .project-content h3 {
-  font-size: 20px; /* Increase the font size */
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
@@ -71,7 +69,7 @@
 
 .project-item a {
   margin-right: 10px;
-  margin-bottom: 10px; /* Add margin-bottom for vertical spacing */
+  margin-bottom: 10px;
 }
 
 .project-item a:last-child {
@@ -86,8 +84,8 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-right: 10px; /* Adjust the margin-right value as needed */
-  margin-bottom: 10px; /* Add margin-bottom for vertical spacing */
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .project-button:hover {
@@ -98,5 +96,3 @@
   color: #fff;
   text-decoration: none;
 }
-
-/* #0585e1, #e54fef */

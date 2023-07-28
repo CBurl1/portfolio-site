@@ -16,9 +16,9 @@
 
 @media (max-width: 768px) {
   .aboutme-card {
-    width: 90vw; /* Adjust the width */
+    width: 90vw;
     height: auto; 
-    padding: 0.5vw; /* Increase the padding */
+    padding: 0.5vw;
   }
 
   .aboutme-container {

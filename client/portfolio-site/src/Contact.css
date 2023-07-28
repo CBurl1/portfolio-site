@@ -20,7 +20,7 @@
   .contact-card {
     width: 85vw;  
     height: 90vh;
-    padding: 1vh 1vw; /* adjusted padding */
+    padding: 1vh 1vw;
     margin: 2vh auto;
   }
 }
